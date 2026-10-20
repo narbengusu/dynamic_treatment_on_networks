@@ -89,21 +89,6 @@ Numbers quoted in the paper (tables, correlations) are recomputed from the saved
 
 The village networks are not redistributed here. They come from the microfinance data collected in Karnataka, India by Banerjee, Chandrasekhar, Duflo and Jackson (2013), "The Diffusion of Microfinance", *Science* 341(6144):1236498, and can be obtained from the paper's archive in the [J-PAL Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl%3A1902.1%2F21538). The village experiments and the village figures read `data/villages/adjacency_all.json`, a JSON object that maps the village number to its symmetric 0/1 adjacency matrix (list of lists); create this file from the archive. Everything else (the covariate and misspecification experiments, the toy example, the saved results) runs without it.
 
-## Figures and tables in the paper
-
-| Paper item | Script | Saved results |
-|---|---|---|
-| Covariate experiment, K=5 (main text and appendix); appendix table | `plotting/make_e1_sweep.py`, `make_e1_village_panel.py` | `experiments/covariate/cluster_sweep_all_results.csv`, `cluster_sweep_all_baselines.csv` |
-| Village improvement histogram | `plotting/make_improvement_hist.py` | `experiments/villages/village_policy_results.csv` |
-| Village results table | `experiments/villages/policy_eval.ipynb` | `experiments/villages/village_policy_results.csv` |
-| Seeding sequences, villages 59 and 71 | `plotting/make_seeding_sequence.py` | `experiments/villages/seeding_example/out/` |
-| EMVS ROC and AUC | `plotting/make_emvs_roc_auc.py` | `experiments/villages/emvs_roc/out/` |
-| Village 50 posteriors (scalar, couplings, heatmap) | `plotting/make_posterior_v50.py` | `experiments/villages/ensemble_v50/out/` |
-| Village 50 ensemble decision tree | `plotting/make_ensemble_tree.py` | `experiments/villages/ensemble_v50/out/v50_tree_records.json` |
-| Village details (communities, examples) | `plotting/make_village_details.py` | `data/villages/adjacency_all.json` |
-| Misspecification table (E2) | `experiments/misspecification/run_qising_sweep.py` | `experiments/misspecification/qising_sweep_all_results.csv` |
-| Small-network UQ (E3) | `experiments/uq_small_network/uq_calibration_sis.py` | `experiments/uq_small_network/uq_calibration_sis_decisions.csv` |
-
 ## Citation
 
 ```
