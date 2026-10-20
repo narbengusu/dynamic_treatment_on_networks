@@ -5,7 +5,7 @@ from network_draw import draw_network
 apply_style()
 O = EXP / "villages/seeding_example/out"
 S = json.load(open(O / "fig3_once_summary.json"))
-# displayed episode: test seed with most distinct communities seeded (see run_fig3_once.py); panels (a) net 59, (b) seq 59, (c) net 71, (d) seq 71
+# displayed episode: test seed 0 of the trained agent; panels (a) net 59, (b) seq 59, (c) net 71, (d) seq 71
 fig, axes = plt.subplots(1, 4, figsize=(FULL_WIDTH, 2.3), constrained_layout=True,
                          gridspec_kw={"width_ratios": [1.0, 1.25, 1.0, 1.25]})
 fig.get_layout_engine().set(w_pad=0.03, h_pad=0.03, wspace=0.02)
@@ -17,7 +17,7 @@ for r, v in enumerate(VILLAGES):
     draw_network(ax, z["adj"], z["pos"], labels, K)
     ax.set_title(f"({'ac'[r]}) Village {v}")
     ax = axes[2 * r + 1]
-    ch = np.array(s["choices"])
+    ch = np.array(s["choices_by_test_seed"]["0"])
     ax.step(ch[:, 0], ch[:, 1], where="mid", lw=1.0, color="0.6", zorder=2)
     for b in range(K):
         t = ch[ch[:, 1] == b, 0]

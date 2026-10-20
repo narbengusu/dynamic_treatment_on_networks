@@ -1,4 +1,4 @@
-# Misspecification experiment (E2)
+# Misspecification experiment
 
 Tests Q-Ising when the Ising model is misspecified: a Barabasi-Albert network (100 nodes, 10 degree bins) with a second-order saturation response, against DQN, topological and random baselines over several T_train.
 

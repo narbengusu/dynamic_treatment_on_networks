@@ -55,9 +55,9 @@ python plotting/make_all.py
 
 | Experiment | Command |
 |---|---|
-| Covariate (E1) | `python experiments/covariate/run_cluster_sweep.py` |
-| Misspecification (E2) | `python experiments/misspecification/run_qising_sweep.py` |
-| Small network UQ (E3) | `python experiments/uq_small_network/confirm_instability_sis.py`, then `uq_calibration_sis.py` |
+| Covariate | `python experiments/covariate/run_cluster_sweep.py` |
+| Misspecification | `python experiments/misspecification/run_qising_sweep.py` |
+| Small network UQ | `python experiments/uq_small_network/confirm_instability_sis.py`, then `uq_calibration_sis.py` |
 | Villages, all policies | notebook `experiments/villages/policy_eval.ipynb` |
 | Villages, EMVS ROC | `python experiments/villages/emvs_roc/run_emvs_roc.py` |
 | Village 50, MCMC | `python experiments/villages/ensemble_v50/run_v50.py mcmc` |
@@ -75,9 +75,9 @@ qising/                  package: ising/ (group Ising model, EMVS, MCMC), baseli
 data/villages/           place adjacency_all.json here (not included, see Data)
 experiments/
   villages/              notebooks, UQ calibration, and re-runs: emvs_roc/, ensemble_v50/, seeding_example/
-  covariate/             covariate experiment (E1)
-  misspecification/      misspecification experiment (E2)
-  uq_small_network/      uncertainty calibration in a small network (E3)
+  covariate/             covariate experiment
+  misspecification/      misspecification experiment
+  uq_small_network/      uncertainty calibration in a small network
 plotting/                figure scripts (make_all.py runs all)
 figures/                 the figure PDFs used in the paper
 scripts/smoke_test.py    quick check of the installation

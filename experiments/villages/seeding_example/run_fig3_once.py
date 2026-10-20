@@ -1,6 +1,6 @@
 """Fig. 3, train-once version: trains one Q-Ising agent per village (59, 71; training seed 0, settings as in run_fig3.py),
 saves it to out/models/ (v{V}_cql.d3, v{V}_state.pkl), and runs test episodes with seeds 0..99.
-Writes out/fig3_once_summary.json. The displayed episode has the most distinct communities seeded (ties: lowest seed).
+Writes out/fig3_once_summary.json. All 100 test episodes are saved; the figure shows test seed 0. (Summary field `choices`: most distinct communities seeded, ties: lowest seed).
 Reload a saved agent with reload_policy() below (see README_once.md)."""
 import os, sys, json, pickle, warnings
 import numpy as np

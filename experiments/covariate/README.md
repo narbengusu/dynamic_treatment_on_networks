@@ -1,4 +1,4 @@
-# Covariate experiment (E1)
+# Covariate experiment
 
 Tests Q-Ising when block adoption is driven by a hidden covariate (SBM with K blocks, ten block covariates per period, one effective), against DQN, DQN on all covariates, topological, random and oracle policies, over N, K and T_train.
 

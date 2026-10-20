@@ -1,4 +1,4 @@
-# Uncertainty calibration in a small network (E3)
+# Uncertainty calibration in a small network
 
 Checks ensemble uncertainty where true decision values are computable: a 10-node SIS network, ensemble of CQL agents trained on Ising posterior draws; vote entropy is compared with the true value gap and redeployed under majority-vote dynamics (`tiny_env.py`, `majority_vote_env.py`).
 
