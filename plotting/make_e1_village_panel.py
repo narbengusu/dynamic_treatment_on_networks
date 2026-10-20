@@ -9,7 +9,7 @@ vil = pd.read_csv(EXP / "villages/village_policy_results.csv", index_col=0)
 TT, N, K = [100, 300, 600], 100, 5
 s = N * 20
 
-fig, (a, b) = plt.subplots(1, 2, figsize=(FULL_WIDTH, 2.8), constrained_layout=True)
+fig, (a, b) = plt.subplots(1, 2, figsize=(FULL_WIDTH, 2.5), constrained_layout=True)
 fig.get_layout_engine().set(wspace=0.08)
 
 # (a) covariate experiment
