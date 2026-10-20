@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Dynamic Treatment on Networks"
+type: software
+authors:
+  - family-names: Nar
+    given-names: Bengusu
+  - family-names: Li
+    given-names: Jiguang
+  - family-names: Ročková
+    given-names: Veronika
+  - family-names: Toulis
+    given-names: Panos
+date-released: "2026-10-20"
+license: MIT
+repository-code: "https://github.com/narbengusu/dynamic_treatment_on_networks"
+preferred-citation:
+  type: article
+  title: "Dynamic Treatment on Networks"
+  authors:
+    - family-names: Nar
+      given-names: Bengusu
+    - family-names: Li
+      given-names: Jiguang
+    - family-names: Ročková
+      given-names: Veronika
+    - family-names: Toulis
+      given-names: Panos
+  year: 2026
+  journal: "arXiv preprint arXiv:2605.06564"
+  url: "https://arxiv.org/abs/2605.06564"

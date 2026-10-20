@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / logs / models
+.DS_Store
+*.log
+models/
+
+# Cluster job scripts (kept locally, not tracked)
+submit_*.sh
+*.sbatch
+*.egg-info/
+
+# Village data is not redistributed (see README)
+data/villages/*.json

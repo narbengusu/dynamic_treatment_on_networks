@@ -1,0 +1,34 @@
+# Pinned versions of the direct dependencies (Python 3.11; versions of the environment the
+# results were produced with). Install with:  pip install -r requirements.txt && pip install -e .
+#
+# CPU build of torch. The workload is CPU-bound (small CQL networks, MCMC, rollouts), and the
+# default PyPI wheel pulls in CUDA libraries that are not needed. To get the CPU-only build,
+# install torch first, in its own call, and then the rest:
+#   pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+# (On Python 3.12 use torch==2.3.1, the first release with a 3.12 CPU wheel; d3rlpy does not pin torch.)
+#
+# macOS: PyMC compiles C code. If the linker reports "tapi error: malformed file", set
+#   export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk
+# before running the MCMC code (experiments/villages/ensemble_v50/run_v50.py, mcmc_ensemble.ipynb).
+#
+# numpy stays below 2: gym 0.26.2 (a d3rlpy dependency) uses numpy APIs removed in numpy 2.
+# pytensor is pinned together with pymc; do not upgrade one without the other.
+numpy==1.26.4
+scipy==1.13.1
+pandas==3.0.5
+scikit-learn==1.9.0
+networkx==3.6.1
+igraph==1.0.0            # the python-igraph bindings (import igraph)
+matplotlib==3.11.1
+torch==2.2.2
+d3rlpy==2.4.0
+gym==0.26.2
+gymnasium==0.29.1
+pymc==5.16.2
+pytensor==2.25.1
+
+# Only needed to run the notebooks in experiments/villages/
+jupyter==1.1.1
+ipykernel==7.3.0
+nbformat==5.10.4

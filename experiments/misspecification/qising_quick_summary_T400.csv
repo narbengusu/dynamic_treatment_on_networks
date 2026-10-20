@@ -1,0 +1,2 @@
+T_train,ising_auc,ising_acc,ising_base_rate_acc,deploy_mean_random,deploy_mean_degree_centrality,deploy_mean_lir,deploy_mean_degree_bin,deploy_mean_dqn_plain,deploy_mean_q_ising,deploy_se_random,deploy_se_degree_centrality,deploy_se_lir,deploy_se_degree_bin,deploy_se_dqn_plain,deploy_se_q_ising
+400,0.6339143367762626,0.6032080200501253,0.5062406015037594,1871.98,2055.6,2055.6,2042.64,2242.14,2231.02,5.693961011457665,3.2427149119217984,3.2427149119217984,3.4220181180116507,3.3580958890418837,3.320661379906117
